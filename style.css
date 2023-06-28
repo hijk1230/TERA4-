@@ -6,9 +6,15 @@ html {
 
 body {
   width: 100%;
-    box-sizing: border-box;
+  height: 100%;
     font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", "Noto Serif Japanese", serif;
-    font-size: 62.5%
+    font-size: 62.5%;
+  margin: 0;
+  padding:0;
+}
+html, body {
+  height: 100%;
+  position: relative;
 }
 
 /*  Chrome対策*/
@@ -16,6 +22,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 /* 終わり */
 img {
   max-width: 100%;
@@ -24,13 +31,31 @@ img {
 a {
   text-decoration: none;
 }
+/* main-nav */
 
 
-.flex-home {
+
+
+.wrapper {
   display: flex;
+  height: auto;
+  margin:0;
+  padding:0;
+}
+/* menu bar */
+.side-nav {
+  position: fixed;
+  height: 100vh;
+  width: 15%;
+  background: #fff;
+  overflow-y:auto ;
 }
 
-/* main-nav */
+header{
+  margin: 0;
+  padding: 0;
+}
+
 .main-nav {
   top: 0;
   left: 0;
@@ -38,6 +63,88 @@ a {
   z-index: 80;
   width: 100%;
   height: 100vh;
-  background: #FFF;
 }
+.main-nav ul{
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  margin: 10%;
+  padding: 0;
+  
 }
+.main-nav ul li{
+  display: block;
+  text-align: center;
+  flex-basis: 40%;
+}
+.main-nav img{
+  height: 15vh;
+}
+.main-page {
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.side-button {
+  text-align: center;
+  flex-basis: 50%;
+  display: inline-block;
+  background-color: #7DBDCB;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .denwa{
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin-left: 19%;
+    border: solid 1px #7DBDCB ;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+
+  /* menu bar End */
+
+
+
+  /* main start */
+  .main-page{
+    background: #efe0ce;
+    margin-bottom: 60px;
+  }
+
+  #home {
+    background-image: url(image/IMG_8034.JPG);
+    min-height: 100vh;
+    width: 85%;
+    background-size: cover;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    margin-left: 15%;
+    
+  }
+  
+
+
+
+  .footer {
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+  }
+  
