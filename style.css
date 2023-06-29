@@ -16,6 +16,18 @@ html, body {
   height: 100%;
   position: relative;
 }
+h2,h1,h3,h4{
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
 
 /*  Chrome対策*/
 body {
@@ -33,9 +45,6 @@ a {
 }
 /* main-nav */
 
-
-
-
 .wrapper {
   display: flex;
   height: auto;
@@ -48,7 +57,6 @@ a {
   height: 100vh;
   width: 15%;
   background: #fff;
-  overflow-y:auto ;
 }
 
 header{
@@ -119,32 +127,272 @@ header{
 
   /* menu bar End */
 
-
-
   /* main start */
   .main-page{
+    display: block;
+    height: 100%;
     background: #efe0ce;
-    margin-bottom: 60px;
+    margin: 0px;
+    margin-left: 20%;
   }
 
   #home {
     background-image: url(image/IMG_8034.JPG);
     min-height: 100vh;
-    width: 85%;
     background-size: cover;
     object-fit: cover;
     margin: 0;
-    padding: 0;
+    padding: 0; 
+  }
+
+  .news{
+    display: block;
+    text-align: center;
+    margin-left: 4%
+  }
+
+
+  .news ul li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none
+    ;
+    text-decoration: none;
+    margin-top: 18px;
+  }
+
+  .news h2{
+    font-size:x-large;
+    margin-top: 20px;
+  }
+
+  .news a{
+    max-width: 70%;
+    display: flex;
+
+    font-size: large;
+    margin-top:15px;
+    margin-right: 15px;
     margin-left: 15%;
-    
+    padding: 10px;
+    color:black;
+    border-bottom:2px solid #ffffff; 
   }
   
+ .news time{
+  margin-right: 10%;
+ }
+
+/* アクセスとsns */
+
+
+  .sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #fff solid;
+    font-weight: normal;
+}
+
+/* SNS-------------- */
+#sns {
+  padding: 4% 0;
+  margin-left: 30%;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 175%;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+}
+.sns-box{
+  width: 30%
+}
 
 
 
-  .footer {
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-  }
+/* footer降ったーーーーーーーーーーーーーーーーーーーーーー */
+
   
+.footer {
+  display: block;
+  margin-left: 30%;
+  padding: 0;
+  font-size: 15px;
+  color: #4b5564;
+  background: #fff;
+}
+.footer__navi-heading {
+  font-weight: 600;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.footer__navi li {
+  margin-bottom: 0.75rem;
+}
+.footer__address {
+  margin-bottom: 2rem;
+}
+.footer__address a {
+  text-decoration: underline;
+}
+
+
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+  .md-justify-between {
+    justify-content: space-between;
+  }
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  } 
+  .footer__address a {
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+@media (min-width: 1024px) {
+  .lg-flex {
+    display: flex;
+  }
+}
+/* main start */
+.main-page{
+  display: block;
+  height: 100%;
+  background: #efe0ce;
+  margin: 0px;
+  margin-left: 20%;
+}
+
+#home {
+  background-image: url(image/IMG_8034.JPG);
+  min-height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  margin: 0;
+  padding: 0; 
+}
+
+.news{
+  display: block;
+  text-align: center;
+  margin-left: 4%
+}
+
+
+.news ul li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none
+  ;
+  text-decoration: none;
+  margin-top: 18px;
+}
+
+.news h2{
+  font-size:x-large;
+  margin-top: 20px;
+}
+
+.news a{
+  max-width: 70%;
+  display: flex;
+
+  font-size: large;
+  margin-top:15px;
+  margin-right: 15px;
+  margin-left: 15%;
+  padding: 10px;
+  color:black;
+  border-bottom:2px solid #ffffff; 
+}
+
+.news time{
+margin-right: 10%;
+}
+
+/* アクセスとsns */
+
+
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #fff solid;
+  font-weight: normal;
+}
+
+/* SNS-------------- */
+#sns {
+padding: 4% 0;
+margin-left: 30%;
+}
+#sns .wrapper {
+display: flex;
+justify-content: space-between;
+max-width: 175%;
+}
+#sns .sub-title {
+margin-bottom: 30px;
+}
+.sns-box{
+width: 30%
+}
+
+
+
+/* footer降ったーーーーーーーーーーーーーーーーーーーーーー */
+
+
+.footer {
+margin-left: 15%;
+padding: 2rem;
+font-size: 15px;
+color: #4b5564;
+background: #fff;
+}
+.footer__navi-heading {
+font-weight: 600;
+}
+.footer__logo {
+display: inline-block;
+margin-bottom: 1.5rem;
+}
+.footer__navi li {
+margin-bottom: 0.75rem;
+}
+.footer__address {
+margin-bottom: 2rem;
+}
+.footer__address a {
+text-decoration: underline;
+}
+
+
+
+@media (min-width: 768px) {
+.md-flex {
+  display: flex;
+}
+.md-justify-between {
+  justify-content: space-between;
+}
+.grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+} 
+.footer__address a {
+  text-decoration: none;
+  pointer-events: none;
+}
+}
+@media (min-width: 1024px) {
+.lg-flex {
+  display: flex;
+}
+}
