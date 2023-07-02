@@ -54,8 +54,8 @@ a {
 /* menu bar */
 .side-nav {
   position: fixed;
-  height: 100vh;
-  width: 15%;
+  height: 100%;
+  width: 20%;
   background: #fff;
 }
 
@@ -196,12 +196,11 @@ header{
 /* SNS-------------- */
 #sns {
   padding: 4% 0;
-  margin-left: 30%;
+
 }
 #sns .wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 175%;
 }
 #sns .sub-title {
   margin-bottom: 30px;
@@ -212,56 +211,6 @@ header{
 
 
 
-/* footer降ったーーーーーーーーーーーーーーーーーーーーーー */
-
-  
-.footer {
-  display: block;
-  margin-left: 30%;
-  padding: 0;
-  font-size: 15px;
-  color: #4b5564;
-  background: #fff;
-}
-.footer__navi-heading {
-  font-weight: 600;
-}
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-}
-.footer__navi li {
-  margin-bottom: 0.75rem;
-}
-.footer__address {
-  margin-bottom: 2rem;
-}
-.footer__address a {
-  text-decoration: underline;
-}
-
-
-
-@media (min-width: 768px) {
-  .md-flex {
-    display: flex;
-  }
-  .md-justify-between {
-    justify-content: space-between;
-  }
-  .grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  } 
-  .footer__address a {
-    text-decoration: none;
-    pointer-events: none;
-  }
-}
-@media (min-width: 1024px) {
-  .lg-flex {
-    display: flex;
-  }
-}
 /* main start */
 .main-page{
   display: block;
@@ -319,8 +268,6 @@ margin-right: 10%;
 }
 
 /* アクセスとsns */
-
-
 .sub-title {
   font-size: 1.375rem;
   padding: 0 8px 8px;
@@ -331,12 +278,11 @@ margin-right: 10%;
 /* SNS-------------- */
 #sns {
 padding: 4% 0;
-margin-left: 30%;
 }
 #sns .wrapper {
 display: flex;
 justify-content: space-between;
-max-width: 175%;
+max-width: 75%;
 }
 #sns .sub-title {
 margin-bottom: 30px;
@@ -351,8 +297,8 @@ width: 30%
 
 
 .footer {
-margin-left: 15%;
-padding: 2rem;
+margin-left: 20%;
+padding: 0;
 font-size: 15px;
 color: #4b5564;
 background: #fff;
@@ -376,6 +322,16 @@ text-decoration: underline;
 
 
 
+
+@media (min-width: 200px) {
+ header {
+  text-align: center;
+ }
+
+
+}
+
+
 @media (min-width: 768px) {
 .md-flex {
   display: flex;
@@ -396,3 +352,5 @@ text-decoration: underline;
   display: flex;
 }
 }
+
+/* footer降ったーーーーーーーーーーーーーーーーーーーーーー */

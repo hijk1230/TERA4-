@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.profile-card h2,
+.profile-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+h3{
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+
+
+.logo img {
+  height: 60px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  overflow-x: auto;
+}
+
+nav ul li {
+  padding: 20px 10px;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  overflow-x: auto;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.staff-member {
+  margin-bottom: 30px;
+}
+
+.staff-member img {
+  width: 200px;
+  height: 200px;
+}
+
+.staff-member h3 {
+  font-size: 22px;
+}
+
+.main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+#home {
+  background-image: url(image/IMG_8032.JPG);
+  min-height:15vh;
+  max-width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0; 
+}
+
+#home h2 {
+  color: #fff;
+}
+#home p {
+  color: #fff;
+}
+
+
+/* main */
+
+
+main {
+  text-align: center;
+}
+
+.profile {
+  display: block;
+  margin-top: 10%;
+  padding-top: 10px;
+  background-color: #f5f5f5;
+  border-radius: 45px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.profile-card .profile-header {
+  width: 60%;
+}
+
+.profile-card .profile-details {
+  width: 40%;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+.profile-card .profile-details h4 {
+  margin-top: 0;
+}
+
+.profile-card .profile-details p {
+  margin-bottom: 5px;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.profile-card h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.profile-card p {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* footer降ったーーーーーーーーーーーーーーーーーーーーーー */
+
+
+.footer {
+  padding: 0;
+  font-size: 15px;
+  color: #4b5564;
+  background: #fff;
+  }
+  .footer__navi-heading {
+  font-weight: 600;
+  }
+  .footer__logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  }
+  .footer__navi li {
+  margin-bottom: 0.75rem;
+  }
+  .footer__address {
+  margin-bottom: 2rem;
+  }
+  .footer__address a {
+  text-decoration: underline;
+  }
+  
+  
+  
+
+
+
+/* レスポンシブ対応 */
+@media (max-width: 767px) {
+  /* スマホサイズに適用されるスタイル */
+
+  /* ヘッダーメニュー */
+  header {
+    display: block;
+    text-align: center;
+  }
+
+
+.logo{
+  justify-content: center;
+}
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+
+  .profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+  }
+
+  .profile-card .profile-details {
+    width: 90%;
+    padding: 20px;
+    padding-top: 5%;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  /* ヘッダーのh1 */
+  header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* ヘッダーメニューのリンク */
+  nav ul li a {
+    font-size: 16px; /* スマホに最適な文字サイズに設定 */
+  }
+
+  footer {
+    text-align: center;
+  }
+  
+  
+}
+
+@media (min-width: 768px) {
+  /* スマホよりも大きな画面サイズに適用されるスタイル */
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* ナビゲーションメニュー */
+  nav ul li {
+    padding: 0 30px;
+  }
+
+  /* プロフィールカード */
+  .profile {
+    display: block;
+    margin: 10%;
+    padding: 5%;
+    background-color: #f5f5f5;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .profile-card .profile-header {
+    width: 60%;
+  }
+
+  .profile-card .profile-details {
+    width: 40%;
+    padding: 20px;
+    padding-top: 5%;
+  }
+/* へっだー */
+  .md-flex {
+    display: flex;
+  }
+  .md-justify-between {
+    justify-content: space-between;
+  }
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  } 
+  .footer__address a {
+    text-decoration: none;
+    pointer-events: none;
+  }
+  }
+
+  @media (min-width: 1024px) {
+  /* タブレットよりも大きな画面サイズに適用されるスタイル */
+
+  /* プロフィールカード */
+  .profile-card .profile-header {
+    width: 60%;
+  }
+
+  .profile-card .profile-details {
+    width: 40%;
+    padding: 20px;
+  }
+  .lg-flex {
+    display: flex;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  /* デスクトップサイズに適用されるスタイル */
+
+  /* プロフィールカード */
+  .profile-card .profile-header {
+    width: 50%;
+  }
+
+  .profile-card .profile-details {
+    width: 50%;
+    padding: 40px;
+  }
+
+.profile-card .profile-header {
+  width: 50%;
+}
+
+.profile-card .profile-details {
+  width: 50%;
+  padding: 20px;
+}
+  /* ヘッダー */
+  header {
+    padding: 40px;
+  }
+
+  /* ナビゲーションメニュー */
+  nav ul li {
+    padding: 0 50px;
+  }
+
+  /* プロフィールカード */
+  
+
+  .profile-card .profile-details {
+    padding: 40px;
+  }
+}
