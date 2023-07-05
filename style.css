@@ -11,6 +11,7 @@ body {
     font-size: 62.5%;
   margin: 0;
   padding:0;
+  background-color:  #faf1e6;
 }
 html, body {
   height: 100%;
@@ -56,13 +57,32 @@ a {
   position: fixed;
   height: 100%;
   width: 20%;
-  background: #fff;
+  background: #fbf8f8;
 }
 
 header{
   margin: 0;
+  margin-top: 10px;
   padding: 0;
 }
+
+.logo img {
+  height: 60px;
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+
+.logo p {
+  text-align: center;
+  font-size:x-large;
+}
+
+
 
 .main-nav {
   top: 0;
@@ -78,12 +98,11 @@ header{
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
-  margin: 10%;
+  margin: 10px 0 10px 0 ;
   padding: 0;
   
 }
 .main-nav ul li{
-  display: block;
   text-align: center;
   flex-basis: 40%;
 }
@@ -102,7 +121,7 @@ header{
 }
 .side-button {
   text-align: center;
-  flex-basis: 50%;
+  flex-basis: 75%;
   display: inline-block;
   background-color: #7DBDCB;
   color: white;
@@ -113,6 +132,12 @@ header{
   text-decoration: none;
   cursor: pointer;
   }
+
+
+
+.siryo{
+  background: orange;
+}
 
   .denwa{
     display: block;
@@ -131,7 +156,7 @@ header{
   .main-page{
     display: block;
     height: 100%;
-    background: #efe0ce;
+    background: #faf1e6;
     margin: 0px;
     margin-left: 20%;
   }
@@ -193,21 +218,6 @@ header{
     font-weight: normal;
 }
 
-/* SNS-------------- */
-#sns {
-  padding: 4% 0;
-
-}
-#sns .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-#sns .sub-title {
-  margin-bottom: 30px;
-}
-.sns-box{
-  width: 30%
-}
 
 
 
@@ -215,7 +225,7 @@ header{
 .main-page{
   display: block;
   height: 100%;
-  background: #efe0ce;
+  background: #faf1e6;
   margin: 0px;
   margin-left: 20%;
 }
@@ -298,22 +308,24 @@ width: 30%
 
 .footer {
 margin-left: 20%;
+margin-top: 2rem;
 padding: 0;
 font-size: 15px;
 color: #4b5564;
-background: #fff;
+background: #faf1e6;
 }
+
 .footer__navi-heading {
 font-weight: 600;
 }
-.footer__logo {
-display: inline-block;
-margin-bottom: 1.5rem;
-}
+
 .footer__navi li {
 margin-bottom: 0.75rem;
+list-style: none;
+text-decoration: none;
 }
 .footer__address {
+  text-align: center;
 margin-bottom: 2rem;
 }
 .footer__address a {
@@ -322,14 +334,58 @@ text-decoration: underline;
 
 
 
+@media (max-width: 767px) {
+  .wrapper {
+   display: block;
+  }
+ .side-nav{
+   position: static;
+   width: auto;
+   background : #faf1e6;
+ }
+   header {
+   text-align: center;
+  }
+  .main-nav {
+    height: auto;
+  }
+  .home-menu-nav-li {
+   display: none;
+  }
+  .minimenu {
+   display: none;
+  }
+  .denwa {
+   display: none;
+  }
+  .buttons {
+    width: 100%;
+  } 
+  .side-button {
+    flex-basis: 96%;
+  }
 
-@media (min-width: 200px) {
- header {
-  text-align: center;
+
+  /* main-page */
+  
+  #home{
+    display: none;
+  }
+  .news {
+    margin : 0;
+  }
+  .news ul {
+    padding: 0;
+  }
+
+  .main-page {
+    margin-left: 0 ;
+   }
+   .footer {
+     margin-left: 0;
+   }
  }
 
-
-}
 
 
 @media (min-width: 768px) {
@@ -353,4 +409,11 @@ text-decoration: underline;
 }
 }
 
+
+
+
+
+
+ 
+ 
 /* footer降ったーーーーーーーーーーーーーーーーーーーーーー */
