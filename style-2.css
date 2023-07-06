@@ -202,14 +202,18 @@ main {
 
 
 .footer {
-  padding:0;
+  text-align: center;
   margin-top: 2rem;
   padding: 0;
   font-size: 15px;
   color: #4b5564;
   background: #faf1e6;
   }
-  
+
+  .lg-flex md-justify-between{
+    text-align: center;
+  }
+
   .footer__navi-heading {
   font-weight: 600;
   }
@@ -226,7 +230,6 @@ main {
   .footer__address a {
   text-decoration: underline;
   }
-  
   
   
   
@@ -251,13 +254,14 @@ main {
   nav ul {
     display: flex;
     flex-basis: 96%;
-    flex-direction: column;
+
     align-items: center;
     padding: 0;
     margin-top: 10px;
   }
 
   .side-button {
+    width: auto;
     text-align: center;
     flex-basis: 75%;
     display: inline-block;
@@ -420,3 +424,53 @@ main {
 }
 
 
+/* contact */
+iframe  {
+  height: 100vh;
+  width: 100%;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+/* フォーム */
+
+.wrapper {
+  display: block ;
+  justify-content: center;
+  }
+
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size :1.125rem ;
+  margin-bottom:10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, .5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+
+input[type="text"],
+input[type="email"]{
+  width:100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"]{
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
